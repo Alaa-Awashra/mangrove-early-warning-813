@@ -1,0 +1,9 @@
+# POSTHOC_SENSITIVITY — T_detect implementation finding
+
+The audit independently reconstructed every future Sentinel-2 degraded observation using the frozen reference, water and persistence thresholds. All 172 stored positive `T_onset` and `T_detect` timestamps are valid degraded observations. However, **109/172 stored `T_detect` timestamps occur after the first real-time confirmation** that satisfies two degraded observations at least 30 days apart and a degraded fraction of at least 60% among valid observations available by that date.
+
+Cause: the existing `_persistent_episode` implementation first chooses an onset whose degraded fraction remains at least 60% **through the entire 24-month horizon**, then reports the first qualifying confirmation for that selected episode. An earlier episode can have satisfied the same frozen detector in real time and later recovered. In that situation the stored `T_detect` is later than the first date conventional monitoring could have issued an alert.
+
+The discrepancy is recorded per support in `results/tables/label_detection_audit.csv`, with corrected first real-time dates also joined to `results/tables/hsi_added_warning_audit.csv`. At the 10% budget, 15 of the 22 C-only true warnings have later stored dates. Their original stored-date median lead is about 672 days; the median lead to **first real-time confirmation** is about 82 days (IQR about 62–319 days).
+
+This run does not alter the frozen labels, `analysis_plan.md`, original OOF predictions, model metrics, or primary comparison. The revised summary reports both the stored-date issue and corrected descriptive lead times. A future corrected prospective detector would require an explicitly versioned new analysis, with independent validation and without presenting changed labels as the original primary result.

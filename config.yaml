@@ -1,0 +1,16 @@
+candidate:
+  aoi: Mahajanga mangroves, Madagascar
+  sensor: EMIT
+  scene_id: EMIT_L2A_RFL_001_20231227T092843_2336106_021
+  t0: '2023-12-27T09:28:43Z'
+  bbox: [45.67, -15.93, 46.78, -14.81]
+  gmw_tiles:
+    - GMW_S16E045_2020_v3.tif
+    - GMW_S16E046_2020_v3.tif
+    - GMW_S15E045_2020_v3.tif
+    - GMW_S15E046_2020_v3.tif
+  s2_tiles: [38LPH, 38LPJ]
+  excluded_s2_items:
+    - S2B_MSIL2A_20230227T071209_R020_T38LPJ_20230301T112510
+  outcome_months: 24
+  selected: true

@@ -1,0 +1,19 @@
+{
+  "scene_id": "EMIT_L2A_RFL_001_20230330T094159_2308907_012",
+  "decision": "EXTERNAL_TEST",
+  "madagascar_retained_bands": 229,
+  "site_missingness_gt_5pct_among_retained": 0,
+  "analysis_type": "EXTERNAL_TEST",
+  "amendment": 2,
+  "frozen_plan_sha256": "40d1e7dc8764daf117457b972b5a1061035dbebeaec51acfe36b5b313dca8a32",
+  "current_plan_sha256": "c4cbd47edb8cbe7c08835a56fbcc16d5592243283f9c58e4313e89f0795e2434",
+  "descriptive_label_counts": {
+    "native_supports_after_hsi_qa": 1255,
+    "already_detected_pre_t0": 24,
+    "persistent_positives": 19,
+    "positive_patches": 15,
+    "stable": 824,
+    "transient": 388,
+    "unresolved": 0
+  }
+}

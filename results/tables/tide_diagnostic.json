@@ -1,0 +1,24 @@
+{
+  "model": "GSFC GOT4.10c via pyTMD",
+  "point_lon": 46.33992234052881,
+  "point_lat": -15.680342597293953,
+  "acquisitions": 300,
+  "tide_range_m": [
+    -2.0084457369987385,
+    0.8709162398603638
+  ],
+  "tide_p75_m": 0.23236544357482322,
+  "spearman_tide_vs_scene_median_water_fraction": 0.0611528885127451,
+  "spearman_p": 0.31051886685995733,
+  "loss_to_water_positives": 96,
+  "loss_to_water_all_structural_obs_at_high_tide": 55,
+  "loss_to_water_median_high_tide_fraction": 1.0,
+  "structural_observation_tide_vs_all_future_tide_mannwhitney_p": 4.474272880213023e-09,
+  "median_tide_structural_obs_m": 0.39951444943259573,
+  "median_tide_all_future_acquisitions_m": -0.6915203320333316,
+  "primary_labels_changed": false,
+  "analysis_type": "POSTHOC_SENSITIVITY",
+  "amendment": 4,
+  "frozen_plan_sha256": "40d1e7dc8764daf117457b972b5a1061035dbebeaec51acfe36b5b313dca8a32",
+  "current_plan_sha256": "6cdc43e7e26877c0c2f8731dc749a819fb380576f9fd500df26c680acfc1f110"
+}

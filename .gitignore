@@ -1,0 +1,27 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.idea/
+.vscode/
+.env
+*.netrc
+_netrc
+
+# Raw and intermediate data (multi-GB; re-downloaded by the Level 3 pipeline)
+data/raw/
+data/cache/
+data/interim/
+data/processed/
+
+# Regenerable model binaries and large rasters (not needed for Level 1/2 reproduction)
+**/*.joblib
+results/**/*.tif
+
+# Local reproduction outputs
+reproducibility/output/
+*.stdout
+
+# Local Python environment and notebook cache
+.venv/
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
